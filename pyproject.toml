@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "kefir"
+version = "0.1.0"
+description = ""
+authors = ["Tvister7 <kirzap123@yandex.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.73.0"
+uvicorn = "^0.17.1"
+python-dotenv = "^0.19.2"
+tortoise-orm = "^0.18.1"
+fastapi-pagination = "^0.9.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
