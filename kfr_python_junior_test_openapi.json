@@ -780,7 +780,8 @@
           },
           "other_name":{
             "title":"Other Name",
-            "type":"string"},
+            "type":"string"
+          },
           "email":{
             "title":"Email",
             "type":"string"
