@@ -3,15 +3,15 @@ import uvicorn
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi_pagination import add_pagination
-# from db import init_db
+from db import init_db
 from endpoints import user, admin, login
 
 app = FastAPI(title="Kefir")
 
 
-# @app.on_event("startup")
-# async def startup_event():
-#     init_db(app)
+@app.on_event("startup")
+async def startup_event():
+    init_db(app)
 
 
 app.include_router(user.router, prefix="/users", tags=["user"])
