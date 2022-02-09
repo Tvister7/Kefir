@@ -7,7 +7,7 @@ PrivateDetailUserResponseModelPydantic = pydantic_model_creator(User,
                                                                 exclude=("password",))
 
 
-class PrivateCreateUserModelPydantic(BaseModel):
+class PrivateCreateUserModelPydantic(BaseModel, User):
     first_name: str = Field(...)
     last_name: str = Field(...)
     other_name: str

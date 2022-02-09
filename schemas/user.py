@@ -4,6 +4,7 @@ from models.user import User
 CurrentUserResponseModelPydantic = pydantic_model_creator(User,
                                                           name="CurrentUserResponseModel",
                                                           exclude=("city", "additional_info", "password"),
+                                                          include=("disabled", ),
                                                           exclude_readonly=True)
 
 UpdateUserModelPydantic = pydantic_model_creator(User,
